@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emploi du temps</title>
+
+  <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid py-3 px-3 px-lg-4">
+
+  <!-- En-tête -->
+  <header class="entete bg-white rounded-4 p-3 p-md-4 mb-4">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-start gap-3">
+      <div>
+        <div class="surtitre">ESPACE ÉTUDIANT</div>
+        <h1 class="h3 fw-bold mb-1">Emploi du temps</h1>
+        <p class="text-secondary mb-0">Semaine du 16 – 21 novembre 2026</p>
+      </div>
+
+      <div class="d-flex flex-wrap gap-2">
+        <button class="btn btn-nav" title="Calendrier"><i class="bi bi-calendar"></i></button>
+        <button class="btn btn-nav" title="Semaine précédente"><i class="bi bi-chevron-left"></i></button>
+        <button class="btn btn-nav text-secondary">Aujourd'hui</button>
+        <button class="btn btn-nav" title="Semaine suivante"><i class="bi bi-chevron-right"></i></button>
+        <button class="btn btn-pdf"><i class="bi bi-file-earmark-pdf"></i> PDF</button>
+      </div>
+    </div>
+
+    <hr class="separateur">
+
+    <div class="legend d-flex gap-2">
+      <span class="badge rounded-pill">COURS</span>
+      <span class="badge rounded-pill">AUTRE</span>
+      <span class="badge rounded-pill eval">EVALUATION</span>
+    </div>
+  </header>
+
+  <!-- Planning -->
+  <div class="planning d-flex">
+
+    <!-- Heures -->
+    <div class="time-col d-none d-xl-block flex-shrink-0">
+      <div class="day-header"></div>
+      <div class="time-body">
+        <span style="--h:0">08:00</span>
+        <span style="--h:1">09:00</span>
+        <span style="--h:2">10:00</span>
+        <span style="--h:3">11:00</span>
+        <span style="--h:4">12:00</span>
+        <span style="--h:5">13:00</span>
+        <span style="--h:6">14:00</span>
+        <span style="--h:7">15:00</span>
+        <span style="--h:8">16:00</span>
+        <span style="--h:9">17:00</span>
+        <span style="--h:10">18:00</span>
+      </div>
+    </div>
+
+    <div class="row g-3 g-xl-0 flex-grow-1 m-0">
+
+      <!-- Lundi -->
+      <div class="col-12 col-md-6 col-lg-4 col-xl-2 px-0 px-md-2 px-xl-0">
+        <div class="day today">
+          <div class="day-header">Lundi <small>16 nov.</small></div>
+          <div class="day-body">
+            <div class="event" style="--start:0; --dur:4">
+              <div class="d-flex justify-content-between"><span class="type">Cours</span><span class="heure">08:00 – 12:00</span></div>
+              <div class="titre">Techniques de communication en Anglais 1</div>
+              <div class="info"><i class="bi bi-person"></i> Amadou Gallo FALL</div>
+              <div class="info"><i class="bi bi-geo-alt"></i> Salle B203</div>
+            </div>
+            <div class="event" style="--start:7; --dur:4">
+              <div class="d-flex justify-content-between"><span class="type">Cours</span><span class="heure">15:00 – 19:00</span></div>
+              <div class="titre">ACSI 2 (UML &amp; Design Patterns)</div>
+              <div class="info"><i class="bi bi-person"></i> Abdoulaye GUISSE</div>
+              <div class="info"><i class="bi bi-geo-alt"></i> Salle B203</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mardi -->
+      <div class="col-12 col-md-6 col-lg-4 col-xl-2 px-0 px-md-2 px-xl-0">
+        <div class="day">
+          <div class="day-header">Mardi <small>17 nov.</small></div>
+          <div class="day-body">
+            <div class="event" style="--start:0; --dur:4">
+              <div class="d-flex justify-content-between"><span class="type">Cours</span><span class="heure">08:00 – 12:00</span></div>
+              <div class="titre">Recherche opérationnelle</div>
+              <div class="info"><i class="bi bi-person"></i> Ahmed Mouhamadou WADE</div>
+              <div class="info"><i class="bi bi-geo-alt"></i> Salle B203</div>
+            </div>
+            <div class="event" style="--start:7; --dur:4">
+              <div class="d-flex justify-content-between"><span class="type">Cours</span><span class="heure">15:00 – 19:00</span></div>
+              <div class="titre">Techniques de communication en Français</div>
+              <div class="info"><i class="bi bi-person"></i> Ousmane SANOKHO</div>
+              <div class="info"><i class="bi bi-geo-alt"></i> Salle B203</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mercredi -->
+      <div class="col-12 col-md-6 col-lg-4 col-xl-2 px-0 px-md-2 px-xl-0">
+        <div class="day">
+          <div class="day-header">Mercredi <small>18 nov.</small></div>
+          <div class="day-body">
+            <div class="event" style="--start:0; --dur:4">
+              <div class="d-flex justify-content-between"><span class="type">Cours</span><span class="heure">08:00 – 12:00</span></div>
+              <div class="titre">Fondamentaux BD (Bases+Programmation SQL, Admin, Sécurité)</div>
+              <div class="info"><i class="bi bi-person"></i> Abdoul Aziz CISS</div>
+              <div class="info"><i class="bi bi-geo-alt"></i> Salle B203</div>
+            </div>
+            <div class="event autre" style="--start:7; --dur:4">
+              <div class="d-flex justify-content-between"><span class="type">Autre</span><span class="heure">15:00 – 19:00</span></div>
+              <div class="titre">TPE</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jeudi -->
+      <div class="col-12 col-md-6 col-lg-4 col-xl-2 px-0 px-md-2 px-xl-0">
+        <div class="day">
+          <div class="day-header">Jeudi <small>19 nov.</small></div>
+          <div class="day-body">
+            <div class="event autre" style="--start:0; --dur:4">
+              <div class="d-flex justify-content-between"><span class="type">Autre</span><span class="heure">08:00 – 12:00</span></div>
+              <div class="titre">TPE (séance en salle)</div>
+            </div>
+            <div class="event autre" style="--start:7; --dur:4">
+              <div class="d-flex justify-content-between"><span class="type">Autre</span><span class="heure">15:00 – 19:00</span></div>
+              <div class="titre">TPE (séance en salle)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vendredi -->
+      <div class="col-12 col-md-6 col-lg-4 col-xl-2 px-0 px-md-2 px-xl-0">
+        <div class="day">
+          <div class="day-header">Vendredi <small>20 nov.</small></div>
+          <div class="day-body">
+            <div class="event" style="--start:0; --dur:4">
+              <div class="d-flex justify-content-between"><span class="type">Cours</span><span class="heure">08:00 – 12:00</span></div>
+              <div class="titre">Traitement du Signal</div>
+              <div class="info"><i class="bi bi-person"></i> Ndeye Fatou NGOM</div>
+              <div class="info"><i class="bi bi-geo-alt"></i> Salle B203</div>
+            </div>
+            <div class="event" style="--start:7; --dur:4">
+              <div class="d-flex justify-content-between"><span class="type">Cours</span><span class="heure">15:00 – 19:00</span></div>
+              <div class="titre">UX Design (+intégration)</div>
+              <div class="info"><i class="bi bi-person"></i> Samba SIDIBE</div>
+              <div class="info"><i class="bi bi-geo-alt"></i> Salle B203</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Samedi -->
+      <div class="col-12 col-md-6 col-lg-4 col-xl-2 px-0 px-md-2 px-xl-0">
+        <div class="day">
+          <div class="day-header">Samedi <small>21 nov.</small></div>
+          <div class="day-body">
+            <div class="event" style="--start:0; --dur:4">
+              <div class="d-flex justify-content-between"><span class="type">Cours</span><span class="heure">08:00 – 12:00</span></div>
+              <div class="titre">PPP 1</div>
+              <div class="info"><i class="bi bi-person"></i> Oumar NIANG</div>
+              <div class="info"><i class="bi bi-geo-alt"></i> Salle B203</div>
+            </div>
+            <div class="vide">Pas de cours l'après-midi</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
